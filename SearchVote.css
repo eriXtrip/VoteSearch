@@ -1,0 +1,296 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-column,
+.right-column {
+    padding: 20px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional, centers items horizontally */
+    gap: 20px; /* Adds space between .floorPlan and PHP content */
+    border-left: 1px solid #ddd;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 600 !important;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Center the form */
+    align-items: center;
+    width:100%; /* Set the width to fill the parent cell */
+    height: fit-content;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 80%; /* Control the width of the input container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+
+/* Style the input */
+.input-container input[type="text"] {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    outline: none;
+}
+
+/* Style the button to appear inside the input */
+.input-container button {
+    border: none;
+    background-color: #7671FA; /* Change color as needed */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 20%;
+    font-size:large;
+    border: 1px solid #b5b5b5; /* Border color */
+    box-sizing: border-box;
+}
+
+/* Optional: Adjust button styling on hover */
+.input-container button:hover {
+    background-color: #ffffff;
+    color: #7671FA;
+}
+
+.scrollable-results {
+    display: block;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.scrollable-results tr {
+    display: table; /* Ensure table display for each row */
+    width: 100%; /* Ensure rows take full width */
+    table-layout: fixed; /* Prevent row resizing */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.scrollable-results::-webkit-scrollbar {
+    width: 0; /* Hides the scrollbar */
+    background: transparent; /* Optional: background */
+}
+
+/* Hide scrollbar for Firefox */
+.scrollable-results {
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* Optional: Hide scrollbar for IE and Edge */
+.scrollable-results {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+}
+
+.headerPrecinct{
+    padding: 10px 0px 10px 20px;
+     text-align: left;
+}
+
+.headerName{
+    padding: 10px 60px; 
+    text-align: left;
+}
+
+.resultFind {
+    border-bottom: 1px solid #ccc; 
+}
+
+.resultFind:hover td {
+    border-bottom:2px solid #717171;
+    background-color: #c9c9c987;
+    color: #3b3b3b;
+}
+
+.resultPrec {
+    text-align: center;
+     padding: 10px;
+}
+
+.resultName {
+    text-align: left; 
+    padding: 10px 0px 10px 80px;
+}
+
+.floorPlan {
+    position: relative;
+    height: 380px;
+    width: 400px;
+    background-image: url("VVES floorplan.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.right-column table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.room1{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.room2{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 110px;
+    left: 10px;
+}
+
+.room3{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 190px;
+    left: 10px;
+}
+
+.room4{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 270px;
+    left: 10px;
+}
+
+.room5{
+    width: 79px;
+    height: 60px;
+    position: absolute;
+    top: 314px;
+    left: 85px;
+}
+
+.room6{
+    width: 79px;
+    height: 60px;
+    position: absolute;
+    top: 314px;
+    left: 165px;
+}
+
+.room7{
+    width: 79px;
+    height: 60px;
+    position: absolute;
+    top: 314px;
+    left: 243px;
+}
+
+.room8{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 42px;
+    left: 160px;
+}
+
+.room9{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 42px;
+    left: 219px;
+}
+
+.room10{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 42px;
+    left: 278px;
+}
+
+.room11{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 42px;
+    left: 337px;
+}
+
+.room12{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 143px;
+    left: 240px;
+}
+
+.room13{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 223px;
+    left: 240px;
+}
+
+.room14{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 143px;
+    left: 321px;
+}
+
+.room15{
+    width: 60px;
+    height: 79px;
+    position: absolute;
+    top: 223px;
+    left: 321px;
+}
+
